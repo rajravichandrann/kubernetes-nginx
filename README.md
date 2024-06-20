@@ -20,5 +20,18 @@ nginx-deployment.yaml ---> this manifest will create the Deployment (nginx-deplo
 
 nginx-service.yaml  ---> this manifest exposes the your deployment  to the internet or a cloud provider's load balancer.
 
+``` sh 
+kubectl get deployments --kubeconfig=./kubeconfig.yaml
+kubectl get service --kubeconfig=./kubeconfig.yaml
+```
 
-use this ```http://a866dfe8d5f494caa8fe6e538f2225ed-743414502.us-west-2.elb.amazonaws.com/``` to access the service
+use the above command to verify the deployments are good
+
+use this ```http://a866dfe8d5f494caa8fe6e538f2225ed-743414502.us-west-2.elb.amazonaws.com/``` to access the service.
+
+
+
+# Improvements
+I would have looked into CICD options and created a DNS so I could have made a ACM to host this service on port 443.
+
+I could have made the terraform better.
