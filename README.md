@@ -27,7 +27,7 @@ kubectl get service --kubeconfig=./kubeconfig.yaml
 
 use the above command to verify the deployments are good
 
-use this ```http://a866dfe8d5f494caa8fe6e538f2225ed-743414502.us-west-2.elb.amazonaws.com/``` to access the service.
+
 
 
 
